@@ -19,39 +19,42 @@ const example = {
 
 // Write your intern objects here:
 let Mitzi = {
-  id = 1,
-  name = "Mitzi",
+  id: 1,
+  name: "Mitzi",
   email: "mmelloy0@psu.edu",
   gender: "F",
 }
 
 let Kennan = {
-  id = 2,
-  name = "Kennan",
+  id: 2,
+  name: "Kennan",
   email: "kdiben1@tinypic.com",
   gender: "M",
   speak: "Hello, my name is Kennan!",
 }
 
 let Keven = {
-  id = 3,
-  name = "Keven",
+  id: 3,
+  name: "Keven",
   email: "kmummery2@wikimedia.org",
   gender: "M",
 }
 
 let Gannie = {
-  id = 4,
-  name = "Gannie",
+  id: 4,
+  name: "Gannie",
   email: "gmartinson3@illinois.edu",
   gender: "M",
 }
 
 let Antonietta = {
-  id = 5,
-  name = "Antonietta",
+  id: 5,
+  name: "Antonietta",
   email: "adaine5@samsung.com",
   gender: "F",
+  speak:function(num1, num2) {
+    return(num1 * num2);
+    }
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -73,18 +76,15 @@ console.log(Antonietta.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-const Kennan = {
-  speak: "Hello, my name is Kennan!",
-};
+
+ Kennan.speak = function(){ return "Hello, my name is Kennan!"}
 console.log(Kennan.speak);
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-function multiplyNums(num1, num2) {
-return(num1 * num2);
-}
-console.log(Antonietta.multiplyNums(3,4));
+
+console.log(Antonietta.speak(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
